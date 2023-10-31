@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <head>
+<body style="background: linear-gradient(87.4deg, rgb(255, 241, 165) 1.9%, rgb(200, 125, 76) 49.7%, rgb(83, 54, 54) 100.5%); ">
+</body>
+<html>
+
+<style>
+h1 {
+      color: rgba(109, 64, 51, 0.836);
+      text-align: center;
+       font-size: 40px;
+       max-width: 650px; 
+       margin: 0 auto; 
+        border-radius: 10px;
+       line-height: 35px;
+       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      border: 2px solid #5f4e46
+     
+    }  
+  
+h2 {
+      text-decoration: underline;
+      color: rgb(241, 229, 213);
+      text-align: center;
+       font-size: 30px;
+       font-weight: normal;
+       max-width: 600px; 
+       margin: 0 auto; 
+       border-radius: 10px;
+       line-height: 35px;
+       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      border: 2px solid #5f4e46
+      
+      
+    }
+
+img {
+    border-radius: 10px;
+}
+
+p {
+    font-size: 13px;
+}
+
+button {
+            border-radius: 10px;
+            margin: 0 auto;
+            display: block;
+            background-color: rgb(160, 108, 76);
+            border: 2px solid #5f2517;
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 5px;
+            padding: 16px 24px;
+            text-decoration: none;
+            transition: all 200ms ease;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+ button:hover {
+            color: rgb(255, 255, 255);
+            background: #6e524b;
+        }
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 60px;
+}
+
+
+</style>
+</head>
+
+<body>
+<section>
+    <div class="container">
+    
+    <h1>
+      I Love Lattes
+    </h1>
+    <hr>
+    <center>
+        <img src="https://miro.medium.com/focal/1200/1200/82/47/1*njE2UVPnj-p4G-x6kYWIhw.jpeg" width="400"  />
+    </center>
+   
+    <h2>
+    Favorite Flavors
+    </h2>
+    
+    <p>
+        <center>
+            <img src="https://p.favim.com/orig/2018/10/30/aesthetics-coffee-brown-Favim.com-6476232.jpg" alt="Image description"
+                width="400" />
+        </center>
+
+        <center> 
+            Iced Latte<br>
+           Iced Matcha Latte<br>
+           Iced Rose Latte<br>
+           <strong>Iced Spanish Latte</strong><br>
+           Iced Horchata Latte<br>
+           Iced Mocha Latte<br>
+           Iced Lavender Latte
+        </center>
+        
+    </p>
+    <center>
+        <button class="buy-button">
+            Place order☕
+        </button>
+    </center>
+    <hr>
+
+    <center>
+    <p class="footer">
+        This page was built by
+        <a href="https://www.shecodes.io/" target="_blank" font-size="10">
+            Crystal Gomez 
+        </a>
+     </p>
+     </center>  
+
+     </div>
+     
+</section>
+<script>
+    function apply() {
+        let firstName = prompt("What is your first name?");
+        let age = prompt("How old are you?");
+        let flavor = prompt("What flavor would you like?");
+        let yes = prompt("Would you like us to text you when it's ready?");
+
+
+       if (age < 18) {
+            alert( firstName  + "  You must be 18 years or older to place an order");
+        } else {
+            alert( firstName  +  " Thank you " + "! We will let you know when your drink is ready ☕ ");
+        }
+
+        alert("☀️ Have a good day! :D ");
+    }
+
+    let applyButton = document.querySelector("button");
+    applyButton.addEventListener("click", apply);
+</script>
+
+
+</body>
